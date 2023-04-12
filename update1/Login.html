@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <title>Login - Skillable TMS</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript">
+            var pageModel = {
+                roleIds: []
+            }
+    </script>
+    <link href="/Content/Themes/Modern/css/Main.css?v=1079" rel="stylesheet" type="text/css" />
+    <link href="/Content/Themes/Modern/css/Main-Print.css" rel="stylesheet" type="text/css" media="print" />
+    <script src="/Scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="/Script/Localize?path=/Scripts/Enlight.js&v=1079" type="text/javascript"></script>
+        <script type="text/javascript">
+                var cookieBannerModel = {
+                    html: "Skillable has updated our Privacy Policy and Terms & Conditions. By using our website or by closing this message box, you agree to our use of cookies and our revised, <a href=\"https://www.skillable.com/lods-privacy/\">Privacy Policy</a> and <a href=\"https://www.skillable.com/terms-and-conditions/\">Terms & Conditions.</a>"
+                };
+        </script>
+<script src="/Script/Localize?path=/Scripts/CookieBanner.js&v=1079" type="text/javascript"></script>        
+    <script src="/Scripts/jquery.validate-1.11.1.min.js" type="text/javascript"></script> <script src="/Scripts/jquery.validate.unobtrusive-3.0.0.min.js" type="text/javascript"></script>
+    
+<style type="text/css">
+        #logindisplay {
+            display: none;
+        }
+        
+        .maintenance {
+            position: absolute;
+            width: 80%;
+            margin: auto;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 25px;
+        }
+        
+</style>
+
+            <style type="text/css">
+
+                #siteLogo {
+                    background-image: url(https://tmsprodcontent.blob.core.windows.net/images/00540049-22f7-418f-915b-fc5c560a1cfc.PNG);
+                    background-size: 335px 70px;;
+                }
+                #siteLogo a {
+                    width:335px;
+                    height:70px;
+                }
+                ul#topMenu { margin-top:106px; }
+                #header { min-height:106px; }
+        </style>
+    </head>
+    <body>
+        
+
+        <div id="page">
+            <a id="skipNav" href="#mainWrapper" tabindex="0">Skip navigation</a>
+            <div id="headerWrapper" role="banner" aria-label="header">
+                <div id="header">
+                    <div id="siteLogo">
+                        <a title="Scratch and Script Company Limited " href="/" aria-label="Scratch and Script Company Limited " tabindex="0"></a>
+                    </div>
+                    <div id="logindisplay">
+                        
+<a class="loginLink" href="/User/Login?returnUrl=%2FUser%2FLogin">Login</a>
+                    </div>
+                    <div id="topnav" role="navigation" aria-label="Top Navigation">
+
+
+<script src="https://customersupport.skillable.com/js/CustomerSupportApp.js" type="text/javascript"></script>
+
+<ul id="topMenu">
+                    <li><a class="topNav" href="/Home/Contact">Contact</a></li>
+    <li id="siteHelpLink"></li>
+
+</ul>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#adminDropDown-button").click(function () {
+            if ($("#adminDropDown-wrapper").hasClass("dropDown-closed")) {
+                $("#adminDropDown-wrapper").load('/Admin/_AdminPartial?randomIdAddedToStopCaching=311c590f-eacf-4ac9-a355-107984d607c4 ');
+                $("#adminDropDown-wrapper").removeClass("dropDown-closed");
+                $("#adminDropDown-button").addClass("open");
+            }
+        });
+    });
+</script>
+
+<script src="/Script/Localize?path=/Scripts/CustomerSupportHelpLink.js&v=1079" type="text/javascript"></script>
+                    </div>
+                </div>
+            </div>
+            <div id="mainWrapper" role="main" aria-label="Main Content">
+                <div id="main">
+                    
+                    
+
+<div id="tempMessage" class="message" role="status" style="margin-bottom:15px; display:none;">
+    <span class="content" tabindex="0"></span>
+    <div class="buttons"><span role="button" aria-controls="tempMessage" aria-label="Close Status Message" tabindex="0" class="remove"></span></div>
+</div>
+<script type="text/javascript">
+$(function() {
+    $("#tempMessage .remove").click(function () {
+        $("#tempMessage").slideUp("fast");
+    }).keyup(function (e) {
+        var code = e.which; // recommended to use e.which, it's normalized across browsers
+        if (code == 32 || code == 13) {
+            $("#tempMessage").slideUp("fast");
+        }
+    });
+});
+</script>
+
+
+
+<link href="/Content/Themes/Modern/jquery-ui-1.10.3/jquery-ui.min.css" rel="stylesheet" type="text/css" /> <script src="/Scripts/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+<link type="text/css" href="/Content/Themes/Modern/css/Login.css?v=1079" rel="stylesheet" />
+<div class="signIn">
+    <img class="hero2" src="/Content/Themes/Modern/css/images/Large_Hero1_620.jpg" alt="" />
+    <img class="hero3" src="/Content/Themes/Modern/css/images/Large_Hero1_620_540x417.jpg" alt="" />
+    <div class="messageBoxWrapper">
+        <div class="messageBox">
+            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+            <h1><span>Get the most out of your training</span></h1>
+            <input id="signInButton" type="button" class="button primary" value="Sign In" />
+                    <input id="registerTrainingKeyButton" type="button" class="button primary" value="Register with Training Key" />
+                <div style="margin:8px 0px 0px;">
+                    <a href="/User/Register?OrganizationId=5002" style="color:#fff; font-size:14px; font-weight:lighter;">Create an Account</a>
+                </div>
+        </div>
+    </div>
+    <img class="hero1" src="/Content/Themes/Modern/css/images/Large_Hero1_620.jpg" alt="" />
+    <div class="introWrapper">
+        <div class="intro">
+            <div></div>
+        </div>
+    </div>
+    <div class="customContent">
+        <div></div>
+    </div>
+</div>
+    <div id="registerDialog" style="display:none;">
+        <h4>Register with a Training Key</h4>
+        <div>
+            <input type="text" id="trainingKey" style="width:337px;" />
+            <p>
+                <input type="button" id="registerWithTrainingKey" value="Register" class="button" />
+            </p>
+            <div id="trainingKeyMessage"></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function () {
+
+        $("form").submit(function () {
+            if (!$(this).valid()) {
+                $(".input-validation-error").eq(0).focus();
+            }
+        });
+
+            
+            $("#registerTrainingKeyButton").click(function () {
+                var $doc = $(document);
+                var boundary = 0;
+                boundary = 400 > boundary ? 400 : boundary;
+                $("#registerDialog").dialog({ width: Math.min($doc.width() * .8, 500), height: Math.min($doc.height() * .8, boundary), modal: true, title: "Register with Training Key" });
+            });
+
+            $("#registerWithTrainingKey").click(function () {
+                var trainingKey = $("#trainingKey").val();
+                if (!trainingKey) {
+                    $("#trainingKeyMessage").text("Please enter a valid training key");
+                    return;
+                }
+                
+                    window.location = "/User/Register?organizationId=5002&trainingKey=" + encodeURIComponent(trainingKey);
+                    
+            });
+            
+
+        $("#signInButton").click(function () {
+                
+                var authUrl = "/AuthenticationProvider/OwinSignIn?";
+                var tk = $("#trainingKey").val();
+                if (tk) {
+                    authUrl += "trainingKey=" + encodeURIComponent(tk);
+                }
+                var retUrl = "";
+                if (retUrl) {
+                    if (tk) authUrl += "&";
+                    authUrl += "returnUrl=" + encodeURIComponent(retUrl);
+                }
+                window.location = authUrl;
+                
+        });
+
+    });
+</script>
+    <script type="text/javascript">
+        function activateKonami() {
+            window.location = "https://lms.learnondemand.net/AuthenticationProvider/SignIn/3" + "?returnUrl=";
+        }
+    </script>
+<script src="/Script/Localize?path=/Scripts/konami.js&v=1079" type="text/javascript"></script>
+                </div>
+            </div>
+            <div id="footerWrapper" role="complementary" aria-label="footer">
+                <div id="footer">
+                    
+
+<div class="footerText">
+    <a href="http://skillable.com" target="_blank">Skillable</a>
+    <span class="footerSplitText"> | </span><a target="_blank" href="http://www.skillable.com/privacy/">Privacy Policy</a>
+    <span class="footerSplitText"> | </span><a target="_blank" href="https://www.skillable.com/accessibility-statement/">Accessibility Statement</a>
+    <span class="footerSplitText"> | </span><a target="_blank" href="https://www.skillable.com/terms-and-conditions/">Terms &amp; Conditions</a>
+    <br />
+    <span id="copyright">
+        &copy; Copyright 2023
+    </span>
+</div>
+<div class="footerSocialIcons">
+    <a href="https://skillable.slack.com/" target="_blank"><img src="/Images/social/slack.svg" alt="Slack" class="socialIcon" /></a>
+    <a href="https://www.linkedin.com/company/skillable" target="_blank"><img src="/Images/social/linkedin.svg" alt="LinkedIn" class="socialIcon" /></a>
+    <a href="https://www.facebook.com/Skillable/" target="_blank"><img src="/Images/social/facebook.svg" alt="Facebook" class="socialIcon" /></a>
+    <a href="https://twitter.com/skillable" target="_blank"><img src="/Images/social/twitter.svg" alt="Twtitter" class="socialIcon" /></a>
+    <a href="https://youtube.com/skillable" target="_blank"><img src="/Images/social/youtube.svg" alt="Youtube" class="socialIcon" /></a>
+    <a href="https://instagram.com/skillablelabs" target="_blank"><img src="/Images/social/instagram.svg" alt="Instagram" class="socialIcon" /></a>
+</div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+
+                <div id="__AjaxAntiForgeryForm">
+            <input name="__RequestVerificationToken" type="hidden" value="iUFanW0WLVERzHuLy_C9y2pGpYLgQ0Q3kQrEV-lN9y-fbe-xgMRJoa_A2dZPSNYZDUfIKKMew8_-23ykopzzei6dtJk1" />
+        </div>
+    </body>
+</html>
